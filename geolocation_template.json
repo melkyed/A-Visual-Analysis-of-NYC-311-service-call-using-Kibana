@@ -1,0 +1,11 @@
+//copy and run the follwing in to terminal before starting logstash
+
+curl -H "Content-Type: application/json" -XPUT 127.0.0.1:9200/nyc_call3 -d '
+{
+  "mappings": {
+              "properties": {
+
+              "Location": {"type": "geo_point"}
+              }
+  }
+}'
